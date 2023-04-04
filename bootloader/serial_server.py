@@ -8,10 +8,10 @@ import sys
 
 class TftpServer:
     OPCODE_READ = b"\x00\x01"
-    OPCODE_WRITE = b"10"
+    OPCODE_WRITE = b"\x00\x02"
     OPCODE_DATA = b"\x00\x03"
     OPCODE_ACK = b"\x00\x04"
-    OPCODE_ERR = b"101"
+    OPCODE_ERR = b"\x00\x05"
 
     STATE_WAITING = 0
     STATE_READING = 1
